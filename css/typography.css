@@ -1,0 +1,177 @@
+/* 
+    This uses CSS variables
+    IE not supported, edge++ only
+*/
+
+:root {
+    --spacing-0:  0px;
+    --spacing-1:  4px;
+    --spacing-2:  8px;
+    --spacing-3:  12px;
+    --spacing-4:  16px;
+    --spacing-5:  20px;
+    --spacing-6:  24px;
+    --spacing-7:  28px;
+    --spacing-8:  32px;
+    --spacing-9:  36px;
+    --spacing-10: 40px;
+    --spacing-11: 44px;
+    --spacing-12: 48px;
+    --spacing-13: 56px;
+    --spacing-14: 64px;
+    --spacing-15: 72px;
+    --spacing-16: 144px;
+
+    --color-1: #F2DC5D;
+    --color-2: #F2A359;
+    --color-3: #DB9065;
+    --color-4: #A4031F;
+    --color-5: #240B36;
+    --color-6: green;
+    --color-7: yellow;
+    --color-8: #3e85f4;
+
+    --color-primary: var(--color-5);
+    --color-secondary: var(--color-3);
+
+    --color-error: var(--color-4);
+    --color-good: var(--color-6);
+    --color-warning: var(--color-7);
+
+    --color-link: var(--color-8);
+    --color-text-dark: #333;
+    --color-text-medium: #666;
+    --color-text-light: #999;
+}
+
+h1, h2, h3, h4,
+h5, h6, p, a, {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: var(--spacing-7);
+}
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: var(--spacing-11);
+    }
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: var(--spacing-6);
+}
+@media (min-width: 1280px) {
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: var(--spacing-8);
+}
+@media (min-width: 1280px) {
+    h3 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: var(--spacing-10);
+    }
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: var(--spacing-7);
+}
+@media (min-width: 1280px) {
+    h4 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: var(--spacing-9);
+    }
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: var(--spacing-6);
+}
+@media (min-width: 1280px) {
+    h5 {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: var(--spacing-8);
+    }
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: var(--spacing-5);
+}
+@media (min-width: 1280px) {
+    h6 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: var(--spacing-7);
+    }
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+p, a, label, li {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: var(--spacing-5);    
+}
+@media (min-width: 1280px) {
+    p, a, label, li {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: var(--spacing-7);
+    }
+}
+
+label {
+    display: block;
+}
+
+em {
+    font-size: inherit;
+    font-weight: 600;
+}
+
+ul {
+    padding-left: var(--spacing-3);
+}
+
+li {
+    position: relative;
+    display: block;
+    padding-left: var(--spacing-3);
+}
+
+li:after {
+    content: "\2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
